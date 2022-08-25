@@ -1,31 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <!-- Font-awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/style.min.css">
-
-
-
+    <link rel="stylesheet" href="./css/register.min.css" />
   </head>
   <body>
-      
+    <header class="header">
+      <div class="container">
+        <div class="header_top">
+          <a class="logo" href="#">
+            <img src="./SCSS/pages/index/image_index/image 3.png" alt="logo" />
+          </a>
+          <div class="lienket">
+            <a href="#" class="cart">
+              <i class="fa fa-shopping-cart"> <span>(1)</span></i>
+            </a>
+            <a href="#" class="login">
+              <span>Login</span>
+            </a>
+            <a href="#" class="register">
+              <span>Register</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav">
+          <a href="#">Home</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kid</a>
+          <a href="#">Sport</a>
+        </div>
+      </div>
+    </header>
+    <section class="register">
+      <div class="container">
+        <h2>Register</h2>
+        <div class="frmDK">
+          <div class="email">
+            <input type="text" placeholder="email" id="txtEmail" />
+            <span id="spEmail" class="text-danger"></span>
+            <input type="password" placeholder="password" id="txtPassword" />
+            <span id="spPassword" class="text-danger"></span>
+            <input
+              type="password"
+              placeholder="password confirm"
+              id="txtPasswordConfirm"
+            />
+            <span id="spPasswordConfirm" class="text-danger"></span>
+          </div>
+          <div class="name">
+            <input
+              type="text"
+              placeholder="name"
+              class="inputName"
+              id="txtName"
+            />
+            <span id="spName" class="text-danger"></span>
+            <input
+              type="text"
+              placeholder="phone"
+              class="inputPhone"
+              id="txtPhone"
+            />
+            <span id="spPhone" class="text-danger"></span>
+            <div class="containerGender">
+              <span>Gender</span>
+              <span class="gender" id="txtGender">
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="true"
+                  class="male"
+                />
+                <label for="true">Male</label>
+                <!-- <span id="spMale" class="text-danger"></span> -->
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  value="false"
+                  class="female"
+                />
+                <label for="false">Female</label>
+                <!-- <span id="spFemale" class="text-danger"></span> -->
+              </span>
+              <span id="spGender" class="text-danger" style="font-size: 16px;"></span>
+            </div>
+            <div class="btn">
+              <button onclick="createUser()">Submit</button>
+            </div>
+          </div>
+        </div>
+        <tbody id="tbodyUser"></tbody>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="main">
+          <div class="row1">
+            <div class="col">
+              <h2>GET HELP</h2>
+              <p>Contact us</p>
+              <p>Shopping</p>
+              <p>NIKEID</p>
+              <p>Nike+</p>
+            </div>
+            <div class="col">
+              <h2>ORDERS</h2>
+              <p>Payment options</p>
+              <p>Shipping and delivery</p>
+              <p>Returns</p>
+            </div>
+            <div class="col">
+              <h2>REGISTER</h2>
+              <p>
+                Create one account to manage everything do you which Nike, from
+                your shopping preferences to your Nike+ activity
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="col">
+              <h2>EMAIL SIGN UP</h2>
+              <p>Be the first to know about new products and special offers.</p>
+              <a href="#">Sign up now</a>
+            </div>
+            <div class="col">
+              <h2>GIFT CARDS</h2>
+              <p>Give the gift that always fits.</p>
+              <a href="#">View cards</a>
+            </div>
+            <div class="col">
+              <h2>STORES NEAR YOU</h2>
+              <p>Locate a Nike retail store or authorized retailer.</p>
+              <a href="#">Search</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- JavaScript -->
+    <script src="./index.js"></script>
+    <script src="./modules/Product.js"></script>
+    <script src="./modules/User.js"></script>
+    <script src="./controllers/indexAjax.js"></script>
+    <script src="./method/validation.js"></script>
   </body>
 </html>
