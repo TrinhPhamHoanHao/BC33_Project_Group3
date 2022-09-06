@@ -39,7 +39,7 @@
             <i class="fa fa-align-justify"></i>
           </div>
           <a class="logo" href="#">
-            <img src="./SCSS/pages/index/image_index/image 3.png" alt="logo" />
+            <img src="./image_index/image 3.png" alt="logo" />
           </a>
           <div class="lienket">
             <a href="#" class="cart">
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="nav">
-          <a href="#">Home</a>
+          <a href="http://127.0.0.1:5500/index.html">Home</a>
           <a href="#">Men</a>
           <a href="#">Women</a>
           <a href="#">Kid</a>
@@ -96,22 +96,24 @@
             <div class="containerGender">
               <span>Gender</span>
               <span class="gender" id="txtGender">
-                <input
+                <label for="male">Male</label>
+                 <input
                   type="radio"
-                  id="male"
+                  id="checkGender"
                   name="gender"
                   value="true"
-                  class="male"
-                />
-                <label for="true">Male</label>
+                  class=""
+                /> 
+                
+                <label for="female">Female</label>
                 <input
                   type="radio"
-                  id="female"
+                  id="checkGender"
                   name="gender"
                   value="false"
-                  class="female"
+                  class=""
                 />
-                <label for="false">Female</label>
+                
               </span>
               <span id="spGender" class="text-danger" style="font-size: 16px;"></span>
             </div>
@@ -197,7 +199,7 @@
     ></script>
 
     <!-- JavaScript -->
-    <script src="./index.js"></script>
+    
     <script src="./register.js"></script>
     <script src="./modules/Product.js"></script>
     <script src="./modules/User.js"></script>

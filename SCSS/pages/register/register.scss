@@ -1,0 +1,308 @@
+
+@import "../../themes/variable";
+@import "../../base/base";
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  .container {
+    @media only screen and (max-width: 992px) {
+      // max-width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+      // max-width: 100%;
+    }
+    @media only screen and (max-width: 576px) {
+      // max-width: 100%;
+    }
+    .header_top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $bg-c1-dark;
+      padding: 10px 40px;
+      @media only screen and (max-width: 992px) {
+        justify-content: flex-start;
+      }
+      @media only screen and (max-width: 768px) {
+        justify-content: flex-start;
+      }
+      @media only screen and (max-width: 576px) {
+        justify-content: flex-start;
+      }
+      .menu {
+        padding-right: 20px;
+        display: none;
+        i {
+          font-size: 35px;
+          color: $text-c1-light;
+          z-index: 1;
+        }
+        @media only screen and (max-width: 992px) {
+          display: block;
+        }
+        @media only screen and (max-width: 768px) {
+          display: block;
+        }
+        @media only screen and (max-width: 576px) {
+          display: block;
+        }
+      }
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
+      .lienket {
+        .cart {
+          text-decoration: none;
+          i {
+            @include text($fz25, $fw300, $text-c2-light);
+            span {
+              @include text($fz25, $fw300, $text-c2-light);
+              &:hover {
+                color: $text-c1-warning;
+              }
+            }
+            &:hover {
+              color: $text-c1-warning;
+            }
+          }
+        }
+        .login {
+          text-decoration: none;
+          span {
+            color: $text-c2-light;
+            padding: 0 30px 0 10px;
+            &:hover {
+              color: $text-c1-warning;
+            }
+          }
+        }
+        .register {
+          text-decoration: none;
+          span {
+            color: $text-c2-light;
+            &:hover {
+              color: $text-c1-warning;
+            }
+          }
+        }
+        @media only screen and (max-width: 992px) {
+          // display: block;
+          padding-left: 40px;
+        }
+        @media only screen and (max-width: 768px) {
+          // display: block;
+          padding-left: 40px;
+        }
+        @media only screen and (max-width: 576px) {
+          display: none;
+        }
+      }
+    }
+    .nav {
+      padding: 10px 20px;
+      a {
+        @include text($fz20, $fw300, $text-c1-dark);
+        padding: 0 20px;
+        text-decoration: none;
+        &:hover {
+          color: $text-c1-warning;
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        display: none;
+      }
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+      @media only screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+  }
+}
+  .register {
+    padding-top: 150px;
+    .container {
+      padding: 0 50px;
+      @media only screen and (max-width: 992px) {
+        
+      }
+      @media only screen and (max-width: 768px) {
+        
+      }
+      @media only screen and (max-width: 576px) {
+        
+      }
+      h2 {
+        @include text($fz40, $fw400, $text-c1-dark);
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .frmDK {
+        display: flex;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          display: block;
+        }
+        @media only screen and (max-width: 576px) {
+          width: 100%;
+          display: block;
+        }
+        .email {
+          margin: 0 40px;
+          width: 50%;
+          input {
+            margin: 10px 0px;
+            width: 100%;
+            padding: 10px 10px;
+          }
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin: 0 10px;
+          }
+          @media only screen and (max-width: 576px) {
+            width: 100%;
+            margin: 0 10px;
+          }
+        }
+        .name {
+          width: 50%;
+          margin: 0 40px;
+          .inputName {
+            margin: 10px 0;
+            width: 100%;
+            padding: 10px 10px;
+          }
+          .inputPhone {
+            margin: 10px 0;
+            width: 100%;
+            padding: 10px 10px;
+          }
+          .containerGender {
+            padding: 20px 0;
+            span {
+              font-size: $fz30;
+              padding-right: 30px;
+              @media only screen and (max-width: 992px) {
+                padding-right: 10px;
+              }
+            }
+            .gender {
+            }
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            @media only screen and (max-width: 576px) {
+              display: flex;
+              flex-wrap: wrap;
+            }
+          }
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin: 2px 10px;
+          }
+          @media only screen and (max-width: 576px) {
+            width: 100%;
+            margin: 2px 10px;
+          }
+        }
+        .btn{
+          button{
+            @include button(
+              $fz20,
+              $fw300,
+              $text-c1-light,
+              $bg-c1-purple,
+              5px 80px,
+              transparent,
+              none,
+              $bg-c1-warning,
+              $text-c1-light
+            );
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 60px 0;
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
+    .container {
+      .main {
+        .row1 {
+          padding: 20px 0;
+          display: flex;
+          justify-content: center;
+          .col {
+            h2 {
+              @include text($fz25, $fw700, $text-c1-dark);
+            }
+            a {
+              text-decoration: none;
+              color: $text-c1-danger;
+              &:hover {
+                color: $text-c1-success;
+              }
+            }
+            @media only screen and (max-width: 992px) {
+              width: 100%;
+            }
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
+            @media only screen and (max-width: 576px) {
+              width: 100%;
+            }
+          }
+          @media only screen and (max-width: 768px) { 
+            display: block;
+          }
+          @media only screen and (max-width: 576px) {
+            display: block;
+          }
+        }
+        .row2 {
+          display: flex;
+          justify-content: center;
+          .col {
+            h2 {
+              @include text($fz25, $fw700, $text-c1-dark);
+            }
+            a {
+              text-decoration: none;
+              color: $text-c1-danger;
+              &:hover {
+                color: $text-c1-success;
+              }
+            }
+            @media only screen and (max-width: 992px) {
+              width: 100%;
+            }
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
+            @media only screen and (max-width: 576px) {
+              width: 100%;
+            }
+          }
+          @media only screen and (max-width: 992px) {
+          }
+          @media only screen and (max-width: 768px) {
+            display: block;
+          }
+          @media only screen and (max-width: 576px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }

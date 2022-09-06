@@ -78,6 +78,7 @@
 }
 
 .carousel {
+  background-image: url(/image6.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

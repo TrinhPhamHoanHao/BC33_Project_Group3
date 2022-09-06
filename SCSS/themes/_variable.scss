@@ -1,24 +1,55 @@
 
 
 
+$text-c1-dark: #000;
+$text-c1-light: #f6f6f6;
+$text-c2-light: #fff;
+$text-c1-gray: #cbc9c9;
+$text-c1-danger: #f50e0e;
+$text-c1-success: #1ed90e;
+$text-c1-info: blue;
+$text-c1-warning: #f8b653;
 
+$bg-c1-dark: #000;
+$bg-c1-warning: #f8b653;
+$bg-c2-warning: #e1b067;
+$bg-c1-light: #dedddc;
+$bg-c2-light: #cccccc;
+$bg-c3-light: #dedddc;
+$bg-c1-purple: #ae18e2;
+$bg-linear1-info: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+$bg-linear2-purple: linear-gradient(
+  270deg,
+  rgba(62, 32, 248, 0.9) 5.14%,
+  #d017ee 89.71%
+);
 
+$fz20: 20px;
+$fz24: 24px;
+$fz25: 25px;
+$fz30: 30px;
+$fz40: 40px;
 
+$fw300: 300;
+$fw400: 400;
+$fw500: 500;
+$fw600: 600;
+$fw700: 700;
 
 @mixin button($fz, $fw, $c, $bg, $pd, $bd, $br, $bg-hover, $c-hover) {
-    @include text($fz, $fw, $c);
-    background: $bg;
-    padding: $pd;
-    border: $bd;
-    border-radius: $br;
-    &:hover {
-      background: $bg-hover;
-      color: $c-hover;
-    }
+  @include text($fz, $fw, $c);
+  background: $bg;
+  padding: $pd;
+  border: $bd;
+  border-radius: $br;
+  &:hover {
+    background: $bg-hover;
+    color: $c-hover;
   }
-  
-  @mixin text($fz, $fw, $c) {
-    font-size: $fz;
-    font-weight: $fw;
-    color: $c;
-  }
+}
+
+@mixin text($fz, $fw, $c) {
+  font-size: $fz;
+  font-weight: $fw;
+  color: $c;
+}

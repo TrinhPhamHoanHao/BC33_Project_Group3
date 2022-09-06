@@ -1,0 +1,225 @@
+
+@import "../../themes/variable";
+@import "../../base/base";
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .container {
+      .header_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $bg-c1-dark;
+        padding: 10px 40px;
+        .logo {
+          img {
+            width: 100%;
+          }
+        }
+        .lienket {
+          .cart {
+            text-decoration: none;
+            i {
+              @include text($fz25, $fw300, $text-c2-light);
+              span {
+                @include text($fz25, $fw300, $text-c2-light);
+                &:hover {
+                  color: $text-c1-warning;
+                }
+              }
+              &:hover {
+                color: $text-c1-warning;
+              }
+            }
+          }
+          .login {
+            text-decoration: none;
+            span {
+              color: $text-c2-light;
+              padding: 0 30px 0 10px;
+              &:hover {
+                color: $text-c1-warning;
+              }
+            }
+          }
+          .register {
+            text-decoration: none;
+            span {
+              color: $text-c2-light;
+              &:hover {
+                color: $text-c1-warning;
+              }
+            }
+          }
+        }
+      }
+      .nav {
+        padding: 10px 20px;
+        a {
+          @include text($fz20, $fw300, $text-c1-dark);
+          padding: 0 20px;
+          text-decoration: none;
+          &:hover {
+            color: $text-c1-warning;
+          }
+        }
+      }
+    }
+  }
+  
+  .carousel {
+    background-image: url(/image6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 40px;
+      position: relative;
+      .arrow_right {
+        position: absolute;
+        right: 0;
+      }
+      .img {
+        img {
+          padding: 0 40px;
+          width: 100%;
+        }
+      }
+      .title {
+        position: relative;
+        .product_name {
+          padding-bottom: 10px;
+        }
+        .product_description {
+  
+        }
+        .btn {
+          position: absolute;
+          top: 80px;
+          left: -10px;
+          button {
+            @include button(
+              $fz20,
+              $fw300,
+              $text-c1-light,
+              $bg-c1-warning,
+              10px 40px,
+              transparent,
+              none,
+              $bg-c1-purple,
+              $text-c1-light
+            );
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+  
+  .product {
+    .container {
+      .main {
+        position: relative;
+        .product_feature {
+          position: absolute;
+          top: 40px;
+          left: 33%;
+        }
+        .row {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 40px;
+          padding: 140px 0px 80px;
+          .col {
+            img {
+              width: 100%;
+            }
+            h2 {
+              @include text($fz24, $fw300, $text-c1-dark);
+            }
+            p {
+              @include text($fz20, $fw300, $text-c1-gray);
+            }
+            .btn {
+              padding: 0;
+              .buy_now {
+                @include button(
+                  $fz24,
+                  $fw300,
+                  $text-c1-dark,
+                  $bg-c2-warning,
+                  10px 30px,
+                  transparent,
+                  none,
+                  $bg-c1-purple,
+                  $text-c1-light
+                );
+                transition: all .5s;
+              }
+              .price {
+                @include button(
+                  $fz24,
+                  $fw600,
+                  $text-c1-dark,
+                  $bg-c3-light,
+                  10px 40px,
+                  transparent,
+                  none,
+                  $bg-c1-purple,
+                  $text-c1-light
+                );
+                transition: all .5s;
+                margin-left: -4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .footer {
+    padding: 60px 0;
+    .container {
+      .main {
+        .row1 {
+          padding: 20px 0;
+          display: flex;
+          justify-content: center;
+          .col {
+            h2 {
+              @include text($fz25, $fw700, $text-c1-dark);
+            }
+            a {
+              text-decoration: none;
+              color: $text-c1-danger;
+              &:hover{
+                color: $text-c1-success;
+              }
+            }
+          }
+        }
+        .row2 {
+          display: flex;
+          justify-content: center;
+          .col {
+            h2 {
+              @include text($fz25, $fw700, $text-c1-dark);
+            }
+            a {
+              text-decoration: none;
+              color: $text-c1-danger;
+              &:hover{
+                color: $text-c1-success;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
