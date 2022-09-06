@@ -11,22 +11,22 @@ function checkRong(value, idError, name){
     return valid;
 }
 
-function checkRongGender(value, idError, name){
-    var valid = false;
-    var ismale = document.getElementById("male").checked;
-    var isfemale = document.getElementById("female").checked;
-    if (ismale || isfemale){
-        document.getElementById(idError).innerHTML = "";
-        valid = true;
-    }
+// function checkRongGender(value, idError, name){
+//     var valid = false;
+//     var ismale = document.getElementById(value).checked;
+//     var isfemale = document.getElementById(value).checked;
+//     if (ismale || isfemale){
+//         document.getElementById(idError).innerHTML = "";
+//         valid = true;
+//     }
     
-    else{
-        document.getElementById(idError).innerHTML = name + " không được để trống";
-        valid = false;
-    }
+//     else{
+//         document.getElementById(idError).innerHTML = name + " không được để trống";
+//         valid = false;
+//     }
     
-    return valid;
-}
+//     return valid;
+// }
 
 function checklengthPhone(value, idError, name, minlength, maxlength){
     var valid = true;
@@ -78,6 +78,7 @@ function checkPassword(value, idError, name, minlength, maxlength){
     return false;
 }
 
+
 function checkSamePassword(value, idError, name) {
     var confirmPassword = document.getElementById("txtPasswordConfirm").value;
     if (value != confirmPassword) {
@@ -86,4 +87,5 @@ function checkSamePassword(value, idError, name) {
     }
     return true;
 }
+
 
