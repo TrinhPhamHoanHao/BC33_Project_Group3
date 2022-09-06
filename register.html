@@ -35,6 +35,9 @@
     <header class="header">
       <div class="container">
         <div class="header_top">
+          <div class="menu">
+            <i class="fa fa-align-justify"></i>
+          </div>
           <a class="logo" href="#">
             <img src="./SCSS/pages/index/image_index/image 3.png" alt="logo" />
           </a>
@@ -101,7 +104,6 @@
                   class="male"
                 />
                 <label for="true">Male</label>
-                <!-- <span id="spMale" class="text-danger"></span> -->
                 <input
                   type="radio"
                   id="female"
@@ -110,12 +112,11 @@
                   class="female"
                 />
                 <label for="false">Female</label>
-                <!-- <span id="spFemale" class="text-danger"></span> -->
               </span>
               <span id="spGender" class="text-danger" style="font-size: 16px;"></span>
             </div>
             <div class="btn">
-              <button onclick="createUser()">Submit</button>
+              <button id="submit">Submit</button>
             </div>
           </div>
         </div>
@@ -197,9 +198,10 @@
 
     <!-- JavaScript -->
     <script src="./index.js"></script>
+    <script src="./register.js"></script>
     <script src="./modules/Product.js"></script>
     <script src="./modules/User.js"></script>
-    <script src="./controllers/indexAjax.js"></script>
+    <script src="./controllers/registerAjax.js"></script>
     <script src="./method/validation.js"></script>
   </body>
 </html>
